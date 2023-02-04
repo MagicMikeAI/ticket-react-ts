@@ -1,15 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { DataContext } from '../DataProvider'
-import { Link, useFetcher, useParams } from 'react-router-dom'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge';
+import { useParams } from 'react-router-dom'
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import Navbar from 'react-bootstrap/Navbar';
-import Picture from '../img/index';
 import ItemCard from './ItemCard';
 
 
@@ -21,12 +15,10 @@ type Item = {
     tags: Array<string>,
     department: string,
     search: string,
-    itemsList: Item[],
     image: string,
-    value: any,
-
-
 }
+
+
 
 
 
@@ -92,7 +84,7 @@ export default function Items() {
                 {
                     filteredItems.map((product: Item) => (
 
-                        <ItemCard key={product._id} title={product.title} department={product.department} image={product.images} tags={product.tags} _id={''} value={undefined} />
+                        <ItemCard key={product._id} title={product.title} department={product.department} image={product.images} tags={product.tags} _id={''} value={undefined}   />
 
 
                     ))}
