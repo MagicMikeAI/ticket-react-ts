@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { DataProvider } from './DataProvider'
 import Navbar from './Components/Navbar'
@@ -33,6 +32,9 @@ function App() {
             </Routes>
 
           </section>
+
+
+
         </Router>
 
       </div>

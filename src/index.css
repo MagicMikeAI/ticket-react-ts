@@ -9,6 +9,7 @@
   background-color: #0d0f77dc;
   background-image: linear-gradient(315deg, #252b5cdc 0%, #301c38 74%);
   min-height: 100vh;
+  margin-bottom: -24px;
 }
 
 code {

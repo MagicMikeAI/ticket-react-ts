@@ -58,7 +58,7 @@ export default function Items() {
 
 
     return (
-        <Container style={{ minWidth: "80%", justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column" }} >
+        <Container style={{ minWidth: "80%", justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column", paddingBottom: "70px" }} >
 
             <Form.Floating style={{ width: "60%", margin: "30px" }}>
                 <Form.Control
