@@ -77,7 +77,7 @@ function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{ marginTop: "-24px" }}>
       <Container>
-        <Navbar.Brand href="#home">ticket</Navbar.Brand>
+        <Navbar.Brand href="#home">Fast-Ticket</Navbar.Brand>
         <Badge bg="secondary" style={{ padding: "10px", marginRight: "20px", fontSize: "18px" }}
         >{
             location ? location : "Location1"

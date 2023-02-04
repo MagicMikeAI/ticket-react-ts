@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemsList from './Components/ItemsList';
 import Login from './Components/Login';
+import ItemDetails from './Components/ItemDetails';
 
 
 
@@ -25,8 +26,9 @@ function App() {
           <section>
             <Routes>
               <Route path="/" element={<Login />} />
+              <Route path="/ticket" element={<Login />} />
               <Route path="ticket/:location" element={<ItemsList />} />
-              <Route path="ticket/:location/:asset" element={<Asset />} />
+              <Route path="ticket/:location/:asset" element={<ItemDetails />} />
               <Route path="admin" element={<Admin />} />
             </Routes>
 

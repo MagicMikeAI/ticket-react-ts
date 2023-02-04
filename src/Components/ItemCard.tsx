@@ -60,7 +60,7 @@ function ItemCard(params: Item) {
                 </Card.Body>
 
                 <Card.Footer style={{ padding: "10px", justifyContent: "center", display: "flex" }}>
-                    <Link to={`/ticket/${location}/${params._id}`}>
+                    <Link to={`/ticket/${location}/1`}>
                         <Button variant="primary">Create Ticket</Button>
                     </Link>
                 </Card.Footer>

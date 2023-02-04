@@ -56,17 +56,6 @@ export default function Items() {
         setFilteredItems(filteredItems);
     };
 
-    //function that prints in console all parameters 
-    const printParams = () => {
-        console.log(location);
-    }
-
-    useEffect(() => {
-        printParams();
-    }, []);
-
-
-
 
     return (
         <Container style={{ minWidth: "80%", justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column" }} >
