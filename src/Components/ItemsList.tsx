@@ -30,16 +30,6 @@ export default function Items() {
 
 
 
-    // filter function that takes in filtered items and sets the state of filtered items to the filtered items
-    const filter = (items: Item[], query: string) => {
-        if (!query) {
-            return items;
-        }
-        return items.filter((item) => {
-            const itemTitle = getTags(item).join(' ');
-            return itemTitle.includes(query);
-        });
-    };
 
     //function that runs trough each given item and returns each tag in the item
     const getTags = (item: Item) => {
@@ -51,9 +41,26 @@ export default function Items() {
 
     // search function that takes in the event and sets the state of filtered items to the filtered items
     const search = (event: React.ChangeEvent<HTMLInputElement>) => {
+if (event.target.value === '') {
+            setFilteredItems(itemsList)
+        }
+
+        else {
         const query = event.target.value;
         const filteredItems = filter(itemsList, query.toUpperCase());
         setFilteredItems(filteredItems);
+        }
+    };
+    
+    // filter function that takes in filtered items and sets the state of filtered items to the filtered items
+    const filter = (items: Item[], query: string) => {
+        if (!query) {
+            return itemsList;
+        }
+        return items.filter((item) => {
+            const itemTitle = getTags(item).join(' ');
+            return itemTitle.includes(query);
+        });
     };
 
 
@@ -69,11 +76,13 @@ export default function Items() {
                 />
                 <label htmlFor="floatingInputCustom">Search for items, departments, tags, workstations etc.</label>
             </Form.Floating>
-            <Row Row >
+
+            <button onClick={() => console.log(itemsList)}>Reset</button>
+            <Row>
                 {
                     filteredItems.map((product: Item) => (
 
-                        <ItemCard key={product._id} title={product.title} department={product.department} image={product.images} tags={product.tags} _id={''} value={undefined}   />
+                        <ItemCard key={product._id} title={product.title} department={product.department} image={product.images} tags={product.tags} _id={product._id} value={undefined}   />
 
 
                     ))}

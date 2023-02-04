@@ -8,6 +8,7 @@ import Pictures from '../img/index';
 
 
 type Item = {
+    key: string,
     _id: string,
     title: string,
     tags: Array<string>,
@@ -28,7 +29,7 @@ function ItemCard(params: Item) {
                 return 'warning';
             case 'HR':
                 return 'success';
-            case 'SECURITY':
+            case 'SEC':
                 return 'danger';
             case "RAD":
                 return 'info';
@@ -47,7 +48,7 @@ function ItemCard(params: Item) {
                 <Card.Header >
                     <Row>
                         <Col md={9}>
-                            <Card.Title>{params.title}</Card.Title>
+                            <Card.Title>{params._id}</Card.Title>
                         </Col>
                         <Col md={3}>
                             <Badge style={{ justifyContent: "center", display: "flex" }} pill bg={getBadgeColor(params.department)} text="light"> {params.department} </Badge>
@@ -60,7 +61,7 @@ function ItemCard(params: Item) {
                 </Card.Body>
 
                 <Card.Footer style={{ padding: "10px", justifyContent: "center", display: "flex" }}>
-                    <Link to={`/ticket/${location}/1`}>
+                    <Link to={`/ticket/${location}/${params._id}`}>
                         <Button variant="primary">Create Ticket</Button>
                     </Link>
                 </Card.Footer>

@@ -84,6 +84,7 @@ interface ItemDetailsProps {
                             <Form.Control
                                 id="floatingInputCustom"
                                 type="text"
+                                placeholder='Floor'
                                 onChange={event => setLevel(
                                     //if the value is empty ( because was deleted by user ) then set it to empry string
                                     event.target.value === "" ? "" :
@@ -97,13 +98,14 @@ interface ItemDetailsProps {
                             <Form.Control
                                 id="floatingInputCustom"
                                 type="text"
+                                placeholder='Location'
                                 onChange={event => setLocationArea(
                                     //if the value is empty ( because was deleted by user ) then set it to empry string
                                     event.target.value === "" ? "" :
                                         //if the value is not empty then add the word "Floor" before the value
                                         "Location " + event.target.value.toUpperCase())}
                             />
-                            <label htmlFor="floatingInputCustom">Location: (Office, Pack, Pick, Stow ...) </label>
+                            <label htmlFor="floatingInputCustom">Location: (Office, Security, Room Number ...) </label>
                         </Form.Floating>
 
 
@@ -111,6 +113,7 @@ interface ItemDetailsProps {
                             <Form.Control
                                 id="floatingInputCustom"
                                 type="text"
+                                placeholder='Station'
                                 onChange={event => setStation(
                                     //if the value is empty ( because was deleted by user ) then set it to empry string
                                     event.target.value === "" ? "" :
@@ -125,6 +128,7 @@ interface ItemDetailsProps {
                             <Form.Control
                                 id="floatingInputCustom"
                                 type="text"
+                                placeholder='AN/SN '
                                 onChange={event => setAssetType(
                                     //if the value is empty ( because was deleted by user ) then set it to empry string
                                     event.target.value === "" ? "" :
@@ -147,6 +151,7 @@ interface ItemDetailsProps {
                                     <Form.Control
                                         id="floatingInputCustom"
                                         type="text"
+                                        placeholder='Other'
                                         onChange={event => setIssue(event.target.value === "" ? "" : event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1))}
                                         maxLength={35}
                                     />

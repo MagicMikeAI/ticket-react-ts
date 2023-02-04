@@ -11,7 +11,7 @@ export const DataProvider = (props) => {
       DGI: [
         { Department: "IT-Support" },
         { Group: "User Devices" },
-        { Item: "Laptop(Macbook)" },
+        { Item: "Laptop(MacOS)" },
       ],
       images: "Laptop",
 
@@ -34,14 +34,14 @@ export const DataProvider = (props) => {
     },
     {
       _id: "2",
-      title: "Macbook",
+      title: "HP Laptop",
       department: "IT",
       DGI: [
         { Department: "IT-Support" },
         { Group: "User Devices" },
-        { Item: "Laptop(Macbook)" },
+        { Item: "Laptop(Windows)" },
       ],
-      images: "Laptop",
+      images: "WinLaptop",
 
       commonIssues: [
         { 1: "Broken Laptop", type: "TT" },
@@ -58,36 +58,32 @@ export const DataProvider = (props) => {
         { 13: "Trackpad Issue", type: "TT" },
         { 14: "USB Issue", type: "TT" },
       ],
-      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
+      tags: ["LAPTOP", "HP", "IT", "COMPUTER", "WINDOWS"],
     },
 
     {
-      _id: "20",
-      title: "Macbook",
+      _id: "3",
+      title: "iPhone",
       department: "IT",
       DGI: [
         { Department: "IT-Support" },
         { Group: "User Devices" },
         { Item: "Laptop(Macbook)" },
       ],
-      images: "Laptop",
+      images: "iPhone",
 
       commonIssues: [
-        { 1: "Broken Laptop", type: "TT" },
+        { 1: "Broken Screen", type: "TT" },
         { 2: "Software Issue", type: "TT" },
-        { 3: "Request Laptop", type: "AI" },
-        { 4: "Temporary Loan", type: "TT" },
+        { 3: "Request Device", type: "AI" },
         { 5: "Missing / Lost", type: "TT" },
-        { 7: "Network / WiFi Issue", type: "TT" },
+        { 7: "WiFi Issue", type: "TT" },
         { 8: "Hardware Issue", type: "TT" },
         { 9: "Battery Issue", type: "TT" },
         { 10: "Power Issue", type: "TT" },
-        { 11: "Screen Issue", type: "TT" },
-        { 12: "Keyboard Issue", type: "TT" },
-        { 13: "Trackpad Issue", type: "TT" },
-        { 14: "USB Issue", type: "TT" },
+        { 13: "Touchscreen Issue", type: "TT" },
       ],
-      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
+      tags: ["IPHONE", "APPLE", "IT", "MOBILE", "PHONE"],
     },
 
     {
@@ -99,7 +95,7 @@ export const DataProvider = (props) => {
         { Group: "User Devices" },
         { Item: "Laptop(Macbook)" },
       ],
-      images: "Laptop",
+      images: "Samsung",
 
       commonIssues: [
         { 1: "Broken Laptop", type: "TT" },
@@ -120,7 +116,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "3",
+      _id: "543",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -128,7 +124,7 @@ export const DataProvider = (props) => {
         { Group: "User Devices" },
         { Item: "Laptop(Macbook)" },
       ],
-      images: "Laptop",
+      images: "HpPrinter",
 
       commonIssues: [
         { 1: "Broken Laptop", type: "TT" },
@@ -150,14 +146,14 @@ export const DataProvider = (props) => {
 
     {
       _id: "4",
-      title: "Macbook",
-      department: "IT",
+      title: "CCTV Investigation",
+      department: "SEC",
       DGI: [
         { Department: "IT-Support" },
         { Group: "User Devices" },
         { Item: "Laptop(Macbook)" },
       ],
-      images: "Laptop",
+      images: "CCTV",
 
       commonIssues: [
         { 1: "Broken Laptop", type: "TT" },
@@ -186,7 +182,7 @@ export const DataProvider = (props) => {
         { Group: "User Devices" },
         { Item: "Laptop(Macbook)" },
       ],
-      images: "Laptop",
+      images: "Elevator",
 
       commonIssues: [
         { 1: "Broken Laptop", type: "TT" },
