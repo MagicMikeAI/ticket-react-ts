@@ -48,7 +48,7 @@ function ItemCard(params: Item) {
                 <Card.Header >
                     <Row>
                         <Col md={9}>
-                            <Card.Title>{params._id}</Card.Title>
+                            <Card.Title>{params.title}</Card.Title>
                         </Col>
                         <Col md={3}>
                             <Badge style={{ justifyContent: "center", display: "flex" }} pill bg={getBadgeColor(params.department)} text="light"> {params.department} </Badge>
