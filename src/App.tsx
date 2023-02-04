@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom'
 import { DataProvider } from './DataProvider'
 import Navbar from './Components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemsList from './Components/ItemsList';
 import Login from './Components/Login';
 import ItemDetails from './Components/ItemDetails';
+import Cookies from 'js-cookie';
 
 
 
