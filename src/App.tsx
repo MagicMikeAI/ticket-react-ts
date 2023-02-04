@@ -27,7 +27,7 @@ function App() {
               <Route path="/" element={<Login />} />
               <Route path="/ticket" element={<Login />} />
               <Route path="ticket/:location" element={<ItemsList />} />
-              <Route path="ticket/:location/:asset" element={<ItemDetails />} />
+              <Route path="ticket/:location/:asset_id" element={<ItemDetails />} />
               <Route path="admin" element={<Admin />} />
             </Routes>
 

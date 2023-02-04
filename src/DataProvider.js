@@ -33,7 +33,7 @@ export const DataProvider = (props) => {
       tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
     },
     {
-      _id: "1",
+      _id: "2",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -62,7 +62,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "20",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -91,7 +91,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "123",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -120,7 +120,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "3",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -149,7 +149,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "4",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -178,7 +178,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "5",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -207,7 +207,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "6",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -236,7 +236,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "7",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -265,7 +265,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "8",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -294,7 +294,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "9",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -322,36 +322,7 @@ export const DataProvider = (props) => {
       tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
     },
     {
-      _id: "1",
-      title: "Macbook",
-      department: "IT",
-      DGI: [
-        { Department: "IT-Support" },
-        { Group: "User Devices" },
-        { Item: "Laptop(Macbook)" },
-      ],
-      images: "Laptop",
-
-      commonIssues: [
-        { 1: "Broken Laptop", type: "TT" },
-        { 2: "Software Issue", type: "TT" },
-        { 3: "Request Laptop", type: "AI" },
-        { 4: "Temporary Loan", type: "TT" },
-        { 5: "Missing / Lost", type: "TT" },
-        { 7: "Network / WiFi Issue", type: "TT" },
-        { 8: "Hardware Issue", type: "TT" },
-        { 9: "Battery Issue", type: "TT" },
-        { 10: "Power Issue", type: "TT" },
-        { 11: "Screen Issue", type: "TT" },
-        { 12: "Keyboard Issue", type: "TT" },
-        { 13: "Trackpad Issue", type: "TT" },
-        { 14: "USB Issue", type: "TT" },
-      ],
-      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
-    },
-
-    {
-      _id: "1",
+      _id: "10",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -380,7 +351,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "11",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -409,7 +380,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "12",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -438,7 +409,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "13",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -467,7 +438,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "14",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -496,7 +467,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "15",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -525,7 +496,7 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "16",
       title: "Macbook",
       department: "IT",
       DGI: [
@@ -554,7 +525,36 @@ export const DataProvider = (props) => {
     },
 
     {
-      _id: "1",
+      _id: "17",
+      title: "Macbook",
+      department: "IT",
+      DGI: [
+        { Department: "IT-Support" },
+        { Group: "User Devices" },
+        { Item: "Laptop(Macbook)" },
+      ],
+      images: "Laptop",
+
+      commonIssues: [
+        { 1: "Broken Laptop", type: "TT" },
+        { 2: "Software Issue", type: "TT" },
+        { 3: "Request Laptop", type: "AI" },
+        { 4: "Temporary Loan", type: "TT" },
+        { 5: "Missing / Lost", type: "TT" },
+        { 7: "Network / WiFi Issue", type: "TT" },
+        { 8: "Hardware Issue", type: "TT" },
+        { 9: "Battery Issue", type: "TT" },
+        { 10: "Power Issue", type: "TT" },
+        { 11: "Screen Issue", type: "TT" },
+        { 12: "Keyboard Issue", type: "TT" },
+        { 13: "Trackpad Issue", type: "TT" },
+        { 14: "USB Issue", type: "TT" },
+      ],
+      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
+    },
+
+    {
+      _id: "18",
       title: "Macbook",
       department: "IT",
       DGI: [

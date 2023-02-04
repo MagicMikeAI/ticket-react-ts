@@ -7,7 +7,6 @@ import { Container, Card, Button, Form, Dropdown, Col } from 'react-bootstrap';
 
 //tsx declaration
 interface ItemDetailsProps {
-    whid: string;
     _id: string;
     issue: string;
     level: string;
@@ -22,7 +21,7 @@ interface ItemDetailsProps {
 
  function RequestForm() {
     const { location } = useParams();
-    const { id: asset } = useParams();
+    const { asset_id } = useParams();
 
     const value = useContext(DataContext)
     const [itemsList] = value.itemsList
@@ -39,23 +38,24 @@ interface ItemDetailsProps {
 
 
 
-    const details = itemsList.filter((product: ItemDetailsProps) => {
-        return product._id === asset
+ //function details that retunrs only the array of the item that matches the asset_id
+    const details = itemsList.filter((item: ItemDetailsProps) => {
+        return item._id === asset_id
     })
 
 
     function generateTicketInfo(): void {
-       
+       console.log(details)
     }
 
 
     function handleSubmit(): void {
-        console.log("level: " + level);
-        console.log("location: " + locationArea);
-        console.log("station: " + station);
-        console.log("asset: " + assetType);
-        console.log("issue: " + issue);
-        console.log("request: " + request);
+        // console.log("level: " + level);
+        // console.log("location: " + locationArea);
+        // console.log("station: " + station);
+        // console.log("asset: " + assetType);
+        // console.log("issue: " + issue);
+        // console.log("request: " + request);
         generateTicketInfo();
     }
 
@@ -63,7 +63,7 @@ interface ItemDetailsProps {
         //use react router to go back to the previous page
     }
 
-    console.log(details)
+ 
 
     return (
         <form>
@@ -72,7 +72,10 @@ interface ItemDetailsProps {
             }}>
 
                 <Card>
-                    <Card.Header>Title</Card.Header>
+                    <Card.Header>
+                    {details[0].title}
+
+                    </Card.Header>
                     <Card.Body style={{ marginLeft: "20px" }}>
 
                         <Card.Title>Please fill the following fields:</Card.Title>
@@ -136,8 +139,8 @@ interface ItemDetailsProps {
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu style={{ width: "75%", marginLeft: "10px" }}>
-                                {/* {details[0].commonIssues.map((item: Object) => (
-                                    <Dropdown.Item onClick={event => setIssue(Object.values(item)[0])}>{Object.values(item)[0]}</Dropdown.Item>))} */}
+                                {details[0].commonIssues.map((item: Object) => (
+                                    <Dropdown.Item onClick={event => setIssue(Object.values(item)[0])}>{Object.values(item)[0]}</Dropdown.Item>))}
 
 
                                 <Form.Floating style={{ width: "90%", margin: "10px", }}>
