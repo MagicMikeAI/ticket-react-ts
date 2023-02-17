@@ -25,14 +25,13 @@ function ItemCard(params: Item) {
         switch (department) {
             case 'IT':
                 return 'primary';
-            case 'H&S':
+            case 'MT':
                 return 'warning';
             case 'HR':
                 return 'success';
             case 'SEC':
                 return 'danger';
-            case "RAD":
-                return 'info';
+
 
         }
     }

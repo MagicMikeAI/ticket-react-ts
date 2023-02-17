@@ -77,7 +77,6 @@ if (event.target.value === '') {
                 <label htmlFor="floatingInputCustom">Search for items, departments, tags, workstations etc.</label>
             </Form.Floating>
 
-            <button onClick={() => console.log(itemsList)}>Reset</button>
             <Row>
                 {
                     filteredItems.map((product: Item) => (

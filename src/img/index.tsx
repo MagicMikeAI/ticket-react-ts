@@ -7,6 +7,9 @@ import iPhone from './iphone.jpg';
 import Samsung from './samsung.jpg';
 import Watercooler from './watercooler.jpg';
 import WinLaptop from './windows.jpg';
+import HR from './hr.jpg';
+import Software from './software.jpg';
+import User from './user.png';
 
 export default {
   Laptop,
@@ -17,6 +20,9 @@ export default {
   iPhone,
   Samsung,
   Watercooler,
-  WinLaptop
+  WinLaptop,
+  HR,
+  Software,
+  User,
 };
 

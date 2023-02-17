@@ -88,7 +88,7 @@ export const DataProvider = (props) => {
 
     {
       _id: "123",
-      title: "Macbook",
+      title: "Andorid Phone",
       department: "IT",
       DGI: [
         { Department: "IT-Support" },
@@ -112,12 +112,12 @@ export const DataProvider = (props) => {
         { 13: "Trackpad Issue", type: "TT" },
         { 14: "USB Issue", type: "TT" },
       ],
-      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
+      tags: ["SAMSUNG", "IT", "PHONE", "ANDROID","MOBILE"],
     },
 
     {
       _id: "543",
-      title: "Macbook",
+      title: "HP Printer",
       department: "IT",
       DGI: [
         { Department: "IT-Support" },
@@ -141,7 +141,7 @@ export const DataProvider = (props) => {
         { 13: "Trackpad Issue", type: "TT" },
         { 14: "USB Issue", type: "TT" },
       ],
-      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
+      tags: ["PRINTER", "HP", "IT", "SCANNER"],
     },
 
     {
@@ -170,13 +170,13 @@ export const DataProvider = (props) => {
         { 13: "Trackpad Issue", type: "TT" },
         { 14: "USB Issue", type: "TT" },
       ],
-      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
+      tags: ["CCTV", "SECURITY", "CAMERA", "SEC"],
     },
 
     {
       _id: "5",
-      title: "Macbook",
-      department: "IT",
+      title: "Elevator",
+      department: "MT",
       DGI: [
         { Department: "IT-Support" },
         { Group: "User Devices" },
@@ -199,19 +199,19 @@ export const DataProvider = (props) => {
         { 13: "Trackpad Issue", type: "TT" },
         { 14: "USB Issue", type: "TT" },
       ],
-      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
+      tags: ["ELEVATOR", "MT"],
     },
 
     {
       _id: "6",
-      title: "Macbook",
-      department: "IT",
+      title: "HR Assistance",
+      department: "HR",
       DGI: [
         { Department: "IT-Support" },
         { Group: "User Devices" },
         { Item: "Laptop(Macbook)" },
       ],
-      images: "Laptop",
+      images: "HR",
 
       commonIssues: [
         { 1: "Broken Laptop", type: "TT" },
@@ -228,19 +228,19 @@ export const DataProvider = (props) => {
         { 13: "Trackpad Issue", type: "TT" },
         { 14: "USB Issue", type: "TT" },
       ],
-      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
+      tags: ["HR", "HOLIDAY"],
     },
 
     {
       _id: "7",
-      title: "Macbook",
+      title: "Software Issue",
       department: "IT",
       DGI: [
         { Department: "IT-Support" },
         { Group: "User Devices" },
         { Item: "Laptop(Macbook)" },
       ],
-      images: "Laptop",
+      images: "Software",
 
       commonIssues: [
         { 1: "Broken Laptop", type: "TT" },
@@ -257,19 +257,19 @@ export const DataProvider = (props) => {
         { 13: "Trackpad Issue", type: "TT" },
         { 14: "USB Issue", type: "TT" },
       ],
-      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
+      tags: ["SOFTWARE", "BUG", "IT", "WEB"],
     },
 
     {
       _id: "8",
-      title: "Macbook",
+      title: "User Account",
       department: "IT",
       DGI: [
         { Department: "IT-Support" },
         { Group: "User Devices" },
         { Item: "Laptop(Macbook)" },
       ],
-      images: "Laptop",
+      images: "User",
 
       commonIssues: [
         { 1: "Broken Laptop", type: "TT" },
@@ -286,7 +286,7 @@ export const DataProvider = (props) => {
         { 13: "Trackpad Issue", type: "TT" },
         { 14: "USB Issue", type: "TT" },
       ],
-      tags: ["LAPTOP", "APPLE", "IT", "COMPUTER", "MACOS"],
+      tags: ["USER", "ACCOUNT", "LOCKED", "COMPUTER"],
     },
 
     {
